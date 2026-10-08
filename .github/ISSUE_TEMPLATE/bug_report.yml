@@ -1,0 +1,46 @@
+name: Bug report
+description: Tell us about something that isn't working as expected.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug. Please remove personal details, credentials and private share URLs.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Link Page Studio
+        - Shared profile preview
+        - Social Card Maker
+        - Campaign Link Builder
+        - Website or deployment
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to reproduce
+      description: Numbered steps are welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and operating system
+      placeholder: Firefox 156, Windows 11

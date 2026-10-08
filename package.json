@@ -1,0 +1,16 @@
+{
+  "name": "socialhub-labs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Privacy-first social presence tools, with zero-server static deployment.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --test",
+    "check": "node --test && node --check public/assets/studio.js && node --check public/assets/tools.js && node --check public/assets/profile.js"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
